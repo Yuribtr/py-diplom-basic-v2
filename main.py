@@ -38,6 +38,9 @@ def run_demo():
         print('Yandex Disk token was not set. You can take it here: https://yandex.ru/dev/disk/poligon/')
         token_ya = input(f'{PrintColors.OKGREEN}Pls input Yandex Disk token: {PrintColors.ENDC}')
 
+    if not vk_user_id:
+        vk_user_id = input('You didn\'t set VK user ID, pls input some or press Enter to use your token ID: ')
+
     print('Seems that everything is ready. Let\'s go!')
     print('\n' + f'{PrintColors.OKBLUE}Starting{PrintColors.ENDC}'.center(padding, '-'))
 
